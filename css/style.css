@@ -50,6 +50,18 @@
   padding-right: 7px;
 }
 
+#header-wrapper {
+  background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
+}
+
 .project-images {
     margin-bottom: 10px;
 }

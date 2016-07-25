@@ -13,7 +13,7 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
+var HTMLheaderRole = '<h4>%data%</h4>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span>%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="icon icon-phone"></span><span class="white-text">%data%</span></li>';
@@ -21,12 +21,12 @@ var HTMLemail = '<li class="flex-item"><span class="icon icon-envelope"></span><
 var HTMLtwitter = '<li class="flex-item"><span class="icon icon-twitter"></span><span class="white-text">%data%</span></li>';
 var HTMLgithub = '<li class="flex-item"><span class="icon icon-github"></span><span class="white-text">%data%</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="">blog</span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<span>%data%</span>';
+var HTMLlocation = '<p><em>%data%</em></p>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic center-block img-responsive img-circle">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box list-unstyled"></ul>';
+var HTMLskillsStart = '<h4 id="skills-h3">Skills at a Glance:</h4><ul id="skills" class="flex-box list-unstyled"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
