@@ -122,7 +122,7 @@ projects.display = function(){
     // Add project images
     project.images.forEach(function(image){
       var formattedImage = HTMLprojectImage.replace("%data%", image);
-      $(".project-entry:last").append(formattedImage);
+      $(".project-entry:last").after(formattedImage);
     });
   });
 }
