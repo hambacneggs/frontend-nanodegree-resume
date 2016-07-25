@@ -15,12 +15,12 @@ replace the %data% placeholder text you see in them.
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span><hr>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
+var HTMLcontactGeneric = '<li class="flex-item"><span>%contact%</span><span class="white-text">%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><span class="icon icon-phone"></span><span class="white-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><span class="icon icon-envelope"></span><span class="white-text">%data%</span></li>';
+var HTMLtwitter = '<li class="flex-item"><span class="icon icon-twitter"></span><span class="white-text">%data%</span></li>';
+var HTMLgithub = '<li class="flex-item"><span class="icon icon-github"></span><span class="white-text">%data%</span></li>';
+var HTMLblog = '<li class="flex-item"><span class="">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<span>%data%</span>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic center-block img-responsive img-circle">';
@@ -36,11 +36,11 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
-var HTMLprojectStart = '<div class="project-entry"></div>';
+var HTMLprojectStart = '<div class="row"><div class="project-entry col-xs-12"></div></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%" class="img-responsive">';
+var HTMLprojectImage = '<div class="project-images col-sm-6"><img src="%data%" class="img-responsive"></div>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
