@@ -1,20 +1,20 @@
 var bio = {
-  "name" : "John Doe",
-  "role" : "Job Title",
+  "name" : "Edvard Munch",
+  "role" : "Painter and Printmaker",
   "contacts" : {
-    "mobile" : "(555)555-5555",
-    "email" : "john@doe.com",
-    "github" : "johndoe555",
-    "twitter" : "johndoe555",
-    "location" : "Los Angeles, CA"
+    "mobile" : "555-555-5555",
+    "email" : "edvard@munch.com",
+    "github" : "edmunch555",
+    "twitter" : "edmunch555",
+    "location" : "Oslo, Norway"
   },
-  "welcomeMessage" : "This is a welcome message Occaecat aliqua qui laborum consectetur nulla incididunt est labore ullamco adipisicing est quis fugiat dolor dolore fugiat aute. Id magna nulla do do non ut adipisicing mollit consequat eiusmod exercitation. Nisi incididunt magna est culpa ullamco irure ipsum dolor incididunt.",
+  "welcomeMessage" : "Norwegian painter and printmaker whose intensely evocative treatment of psychological themes built upon some of the main tenets of late 19th-century Symbolism and greatly influenced German Expressionism in the early 20th century. One of his most well-known works is The Scream of 1893.",
   "skills" : [
-    "Skill 1",
-    "Skill 2",
-    "Skill 3"
+    "Expressionism",
+    "Symbolism",
+    "Excessive Drinking"
   ],
-  "biopic" : "http://placehold.it/150x150"
+  "biopic" : "images/bio-pic.jpg"
 };
 
 bio.display = function() {
@@ -33,12 +33,16 @@ bio.display = function() {
   var formattedGithub = HTMLgithub.replace("%data%", contacts.github);
   $("#header-contacts").append(formattedMobile + formattedEmail +formattedGithub);
   $("#footerContacts").append(formattedMobile + formattedEmail +formattedGithub);
+  $(".tel").attr("href", "tel:" + contacts.mobile);
+  $(".email").attr("href", "mailto:" + contacts.email);
+  $(".github").attr("href", "https://github.com/" + contacts.github);
 
   // Add Twitter (optional)
   if (contacts.twitter) {
     var formattedTwitter = HTMLtwitter.replace("%data%", contacts.twitter);
     $("#header-contacts").append(formattedTwitter);
     $("#footerContacts").append(formattedTwitter);
+    $(".twitter").attr("href", "https://twitter.com/" + contacts.twitter);
   }
 
   //Add Location

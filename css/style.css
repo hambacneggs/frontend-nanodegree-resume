@@ -47,7 +47,7 @@
 }
 
 .icon {
-  padding-right: 7px;
+  padding: 0 7px;
 }
 
 #header-wrapper {
@@ -60,6 +60,27 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
     color: #ffffff;
+}
+
+#header-id {
+    text-shadow: 1px 1px 2px #232323;
+}
+
+#header-info {
+    background-color: rgba(66, 66, 66, 0.45);
+}
+
+#header-contacts a {
+    color: #ffffff;
+}
+
+.location {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.img-circle {
+    border: 5px solid #ffffff;
 }
 
 .project-images {

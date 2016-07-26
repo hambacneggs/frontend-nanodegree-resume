@@ -12,16 +12,16 @@ Cameron Pittman
 These are HTML strings. As part of the course, you'll be using JavaScript functions
 replace the %data% placeholder text you see in them.
 */
-var HTMLheaderName = '<h1 id="name">%data%</h1>';
+var HTMLheaderName = '<h2 id="name">%data%</h2>';
 var HTMLheaderRole = '<h4>%data%</h4>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span>%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="icon icon-phone"></span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="icon icon-envelope"></span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="icon icon-twitter"></span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="icon icon-github"></span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="">blog</span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<p><em>%data%</em></p>';
+var HTMLmobile = '<li class="flex-item"><span class="icon icon-phone"></span><a class="tel">%data%</a></li>';
+var HTMLemail = '<li class="flex-item"><span class="icon icon-envelope"></span><a class="email">%data%</a></li>';
+var HTMLtwitter = '<li class="flex-item"><span class="icon icon-twitter"></span><a class="twitter">%data%</a></li>';
+var HTMLgithub = '<li class="flex-item"><span class="icon icon-github"></span><a class="github">%data%</a></li>';
+var HTMLblog = '<li class="flex-item"><span class="">blog</span><span class="blog">%data%</span></li>';
+var HTMLlocation = '<p class="location">%data%</p>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic center-block img-responsive img-circle">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
