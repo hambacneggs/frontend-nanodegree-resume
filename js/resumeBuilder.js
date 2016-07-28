@@ -62,18 +62,18 @@ bio.display();
 var work = {
   "jobs" : [
     {
-      "employer" : "Employer 1",
-      "title" : "Job Title 1",
-      "location" : "Chicago, IL",
-      "dates" : "2015-2016",
-      "description" : "Job 1 description"
+      "employer" : "Self-Employed",
+      "title" : "Painter",
+      "location" : "Paris, France",
+      "dates" : "1889",
+      "description" : "Worked in Paris during the Exposition Universelle"
     },
     {
-      "employer" : "Employer 2",
-      "title" : "Job Title 2",
-      "location" : "San Diego, CA",
-      "dates" : "2015-2016",
-      "description" : "Job 2 description"
+      "employer" : "Self-Employed",
+      "title" : "Painter",
+      "location" : "Berlin, Germany",
+      "dates" : "1892",
+      "description" : " Adelsteen Normann, on behalf of the Union of Berlin Artists, invited Munch to exhibit at its November exhibition"
     }
   ]
 };
@@ -95,21 +95,21 @@ work.display();
 var projects = {
   "projects" : [
     {
-      "title" : "Project 1",
-      "dates" : "2015-2016",
-      "description" : "Project 1 description - Etiam fermentum lectus eu quam venenatis porttitor. Quisque laoreet ultricies odio, vel commodo tellus mattis at. Mauris ut urna a purus ornare scelerisque. Curabitur velit enim, consectetur sit amet odio eget, vehicula gravida turpis. Quisque et euismod est, eu viverra urna. Sed posuere, ante at dictum molestie, ex enim ultrices ex, sit amet aliquam ante ante a mi. Curabitur vitae sagittis lectus.",
+      "title" : "The Scream",
+      "dates" : "1893-1895",
+      "description" : "The Scream is Munch's most famous work, and one of the most recognizable paintings in all art. It has been widely interpreted as representing the universal anxiety of modern man. Painted with broad bands of garish color and highly simplified forms, and employing a high viewpoint, it reduces the agonized figure to a garbed skull in the throes of an emotional crisis. The Scream exists in four versions: two pastels (1893 and 1895) and two paintings (1893 and 1910). There are also several lithographs of The Scream (1895 and later).",
       "images" : [
-        "http://placehold.it/350x150",
-        "http://placehold.it/350x150"
+        "images/the-scream-300px.jpg",
+        "images/the-scream-litho-300px.jpg"
       ]
     },
     {
-      "title" : "Project 2",
-      "dates" : "2015-2016",
-      "description" : "Project 2 description - Aenean nec libero odio. Aliquam felis nisl, laoreet non sodales nec, tincidunt non mi. Pellentesque at sem vel ex hendrerit dignissim vitae ac leo. Fusce tincidunt nunc sit amet aliquam mollis. Quisque at consectetur turpis. Donec lacinia egestas dapibus. Donec rutrum dictum odio, id efficitur augue hendrerit a. Nunc justo diam, faucibus at enim eget, rutrum sodales turpis. Curabitur vestibulum eleifend massa, quis convallis odio facilisis vel. Cras vitae dictum augue.",
+      "title" : "The Sick Child",
+      "dates" : "1885-1926",
+      "description" : "The Sick Child (Norwegian: Det syke barn) is the title given to six paintings and a number of lithographs, drypoints and etchings completed between 1885 and 1926. All record a moment before the death of his older sister Johanne Sophie (1862–1877) from tuberculosis at 15. Munch returned to this deeply traumatic event again and again in his art, over six completed oil paintings and many studies in various media, over a period of more than 40 years.",
       "images" : [
-        "http://placehold.it/350x150",
-        "http://placehold.it/350x150"
+        "images/sick-child-1-300px.jpg",
+        "images/sick-child-2-300px.jpg"
       ]
     }
   ]
@@ -136,40 +136,41 @@ projects.display();
 var education = {
   "schools" : [
     {
-      "name" : "School 1",
-      "location" : "Detroit, MI",
-      "degree" : "Degree 1",
+      "name" : "Technical College",
+      "location" : "Oslo, Norway",
+      "degree" : "Engineering",
       "majors" : [
-        "Major 1",
-        "Major 2"
+        "Physics",
+        "Chemistry",
+        "Math"
       ],
-      "dates" : "2015-2016",
-      "url" : "http://google.com"
+      "dates" : "1879",
+      "url" : "https://en.wikipedia.org/wiki/Institute_of_technology"
     },
     {
-      "name" : "School 2",
-      "location" : "Portland, OR",
-      "degree" : "Degree 2",
+      "name" : "Royal School of Art and Design of Kristiania",
+      "location" : "Oslo, Norway",
+      "degree" : "Art",
       "majors" : [
-        "Major 3",
-        "Major 4"
+        "Painting",
+        "Printmaking"
       ],
-      "dates" : "2015-2016",
-      "url" : "http://google.com"
+      "dates" : "1881",
+      "url" : "https://www.google.com/search?q=Royal+School+of+Art+and+Design+of+Kristiania"
     }
   ],
   "onlineCourses" : [
     {
-      "title" : "Online Course 1",
-      "school" : "Online School 1",
-      "dates" : "2015-2016",
-      "url" : "http://google.com"
+      "title" : "19th and 20th Century Art History",
+      "school" : "Time Traveling School of Art",
+      "dates" : "2155",
+      "url" : "http://timetravelisrealandstuff.com"
     },
     {
-      "title" : "Online Course 2",
-      "school" : "Online School 2",
-      "dates" : "2015-2016",
-      "url" : "http://google.com"
+      "title" : "Traveling through the multi-verse",
+      "school" : "Multiple-Universe University",
+      "dates" : "29XX",
+      "url" : "http://thereisalwaysalighthouse.com"
     }
   ]
 };
