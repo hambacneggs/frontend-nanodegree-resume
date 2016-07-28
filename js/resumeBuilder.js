@@ -35,14 +35,20 @@ bio.display = function() {
   $("#footerContacts").append(formattedMobile + formattedEmail +formattedGithub);
   $(".tel").attr("href", "tel:" + contacts.mobile);
   $(".email").attr("href", "mailto:" + contacts.email);
-  $(".github").attr("href", "https://github.com/" + contacts.github);
+  $(".github").attr({
+    href: "https://github.com/" + contacts.github,
+    target: "_blank"
+  });
 
   // Add Twitter (optional)
   if (contacts.twitter) {
     var formattedTwitter = HTMLtwitter.replace("%data%", contacts.twitter);
     $("#header-contacts").append(formattedTwitter);
     $("#footerContacts").append(formattedTwitter);
-    $(".twitter").attr("href", "https://twitter.com/" + contacts.twitter);
+    $(".twitter").attr({
+      href: "https://twitter.com/" + contacts.twitter,
+      target: "_blank"
+    });
   }
 
   //Add Location
@@ -162,7 +168,7 @@ var education = {
   "onlineCourses" : [
     {
       "title" : "19th and 20th Century Art History",
-      "school" : "Time Traveling School of Art",
+      "school" : "Time Traveler's School of Art",
       "dates" : "2155",
       "url" : "http://timetravelisrealandstuff.com"
     },
@@ -184,11 +190,14 @@ education.display = function() {
     var formattedDates = HTMLschoolDates.replace("%data%", school.dates);
     var formattedLocation = HTMLschoolLocation.replace("%data%", school.location);
     $(".education-entry:last").append(formattedName + formattedDegree + formattedDates + formattedLocation);
-    // Add Majors
-    school.majors.forEach(function (major) {
-      var formattedMajor = HTMLschoolMajor.replace("%data%", major);
-      $(".education-entry:last").append(formattedMajor);
+    $(".education-entry:last .title-text").attr({
+      href: school.url,
+      target: "_blank"
     });
+    // Add Majors
+    var majorList = school.majors.join(", ");
+    var formattedMajor = HTMLschoolMajor.replace("%data%", majorList);
+    $(".education-entry:last").append(formattedMajor);
   });
   // Add Online Courses
   $("#education").append(HTMLonlineClasses);
@@ -200,6 +209,10 @@ education.display = function() {
     var formattedUrl = HTMLonlineURL.replace("%data%", course.url);
     formattedUrl = formattedUrl.replace("#", course.url);
     $(".education-entry:last").append(formattedTitle + formattedSchool + formattedDates + formattedUrl);
+    $(".education-entry:last .title-text").attr({
+      href: course.url,
+      target: "_blank"
+    });
   });
 }
 

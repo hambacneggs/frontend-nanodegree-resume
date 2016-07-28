@@ -85,15 +85,26 @@ header {
 
 .location {
   font-style: italic;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .img-circle {
     border: 5px solid #ffffff;
 }
 
-.project-images {
-    margin-bottom: 10px;
+.title-text {
+  font-weight: 600;
+}
+
+.project-entry,
+.project-images,
+.title-text,
+.date-text,
+.location-text,
+.major-text,
+.url-text {
+  display: block;
+  margin: 0 0 10px;
 }
 
 #mapDiv {
