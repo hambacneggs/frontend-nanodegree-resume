@@ -218,24 +218,5 @@ education.display = function() {
 
 education.display();
 
-// Collecting click locations
-$(document).click(
-  function(loc) {
-    console.log("x:" + loc.pageX + "y:" + loc.pageY)
-  }
-);
-
-// internationalize name quiz
-$("#main").append(internationalizeButton);
-
-function inName(name) {
-  var fullNameArray = name.split(" ");
-  var firstName1 = fullNameArray[0].slice(0,1).toUpperCase();
-  var firstName2 = fullNameArray[0].slice(1).toLowerCase();
-  var lastName = fullNameArray[1].toUpperCase();
-  var formattedName = firstName1 + firstName2 + " " + lastName;
-  return formattedName;
-}
-
 // adding google map
 $("#mapDiv").append(googleMap);
