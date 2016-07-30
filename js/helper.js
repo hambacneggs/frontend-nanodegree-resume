@@ -6,7 +6,6 @@ var HTMLmobile = '<li class="flex-item"><span class="icon icon-phone"></span><a 
 var HTMLemail = '<li class="flex-item"><span class="icon icon-envelope"></span><a class="email">%data%</a></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="icon icon-twitter"></span><a class="twitter">%data%</a></li>';
 var HTMLgithub = '<li class="flex-item"><span class="icon icon-github"></span><a class="github">%data%</a></li>';
-var HTMLblog = '<li class="flex-item"><span class="">blog</span><span class="blog">%data%</span></li>';
 var HTMLlocation = '<p class="location">%data%</p>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic center-block img-responsive img-circle">';
@@ -41,7 +40,6 @@ var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<a class="url-text" href="#">%data%</a>';
 
-var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
 /*
