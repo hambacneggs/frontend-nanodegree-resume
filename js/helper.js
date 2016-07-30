@@ -8,7 +8,7 @@ var HTMLtwitter = '<li class="flex-item"><span class="icon icon-twitter"></span>
 var HTMLgithub = '<li class="flex-item"><span class="icon icon-github"></span><a class="github">%data%</a></li>';
 var HTMLlocation = '<p class="location">%data%</p>';
 
-var HTMLbioPic = '<img src="%data%" class="biopic center-block img-responsive img-circle">';
+var HTMLbioPic = '<img src="%data%" class="biopic center-block img-responsive img-circle" alt="%alt%">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<h4 id="skills-title">Skills at a Glance:</h4><ul id="skills" class="flex-box list-unstyled"></ul>';
@@ -25,7 +25,7 @@ var HTMLprojectStart = '<div class="row"><div class="project-entry col-xs-12"></
 var HTMLprojectTitle = '<p class="title-text">%data%</p>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p>%data%</p>';
-var HTMLprojectImage = '<div class="project-images col-sm-6"><img src="%data%" class="img-responsive img-thumbnail center-block"></div>';
+var HTMLprojectImage = '<div class="project-images col-sm-6"><img src="%data%" class="img-responsive img-thumbnail center-block" alt="%alt%"></div>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a class="title-text">%data%';

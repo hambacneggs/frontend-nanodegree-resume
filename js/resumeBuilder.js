@@ -23,6 +23,7 @@ bio.display = function() {
   var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
   var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
   var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
+  formattedPic = formattedPic.replace("%alt%", bio.name);
   $("#header-id").append(formattedPic + formattedName + formattedRole);
   $("#header-welcome").append(formattedWelcomeMsg);
 
@@ -105,8 +106,12 @@ var projects = {
       "dates" : "1893-1895",
       "description" : "The Scream is Munch's most famous work, and one of the most recognizable paintings in all art. It has been widely interpreted as representing the universal anxiety of modern man. Painted with broad bands of garish color and highly simplified forms, and employing a high viewpoint, it reduces the agonized figure to a garbed skull in the throes of an emotional crisis. The Scream exists in four versions: two pastels (1893 and 1895) and two paintings (1893 and 1910). There are also several lithographs of The Scream (1895 and later).",
       "images" : [
-        "images/the-scream-300px.jpg",
-        "images/the-scream-litho-300px.jpg"
+        "images/the-scream-litho-300px.jpg",
+        "images/the-scream-300px.jpg"
+      ],
+      "imageAlt" : [
+        "Lithograph of The Scream. Man on a bridge holding head with hands and screaming",
+        "Painting of The Scream. Man on a bridge holding head with hands and screaming"
       ]
     },
     {
@@ -114,8 +119,12 @@ var projects = {
       "dates" : "1885-1926",
       "description" : "The Sick Child (Norwegian: Det syke barn) is the title given to six paintings and a number of lithographs, drypoints and etchings completed between 1885 and 1926. All record a moment before the death of his older sister Johanne Sophie (1862–1877) from tuberculosis at 15. Munch returned to this deeply traumatic event again and again in his art, over six completed oil paintings and many studies in various media, over a period of more than 40 years.",
       "images" : [
-        "images/sick-child-1-300px.jpg",
-        "images/sick-child-2-300px.jpg"
+        "images/sick-child-2-300px.jpg",
+        "images/sick-child-1-300px.jpg"
+      ],
+      "imageAlt" : [
+        "Another Painting of The Sick Child, 1907. A dark-haired and older woman in a black dress sits by the child's bedside, holding her hand.",
+        "Painting of The Sick Child, 1896. A dark-haired and older woman in a black dress sits by the child's bedside, holding her hand."
       ]
     }
   ]
@@ -130,10 +139,13 @@ projects.display = function(){
     $(".project-entry:last").append(formattedTitle + formattedDates + formattedDesc);
 
     // Add project images
-    project.images.forEach(function(image){
-      var formattedImage = HTMLprojectImage.replace("%data%", image);
+    for (var i = 0; i < project.images.length; i++) {
+      var formattedImage = HTMLprojectImage.replace("%data%", project.images[i]);
+      formattedImage = formattedImage.replace("%alt%", project.imageAlt[i]);
       $(".project-entry:last").after(formattedImage);
-    });
+      //console.log(project.imageAlt[i]);
+      //$(".project-entry:last img").attr("alt", project.imageAlt[i]);
+    }
   });
 };
 
