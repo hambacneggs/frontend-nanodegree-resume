@@ -1,135 +1,136 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
 
-<head lang="en">
+    <!-- Character encoding -->
+    <meta charset="utf-8">
 
-  <!-- Character encoding -->
-  <meta charset="utf-8">
+    <!-- Page title -->
+    <title>Resume</title>
 
-  <!-- Page title -->
-  <title>Resume</title>
+    <!-- Page styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 
-  <!-- Page styles -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <!-- Javascript -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
 
-  <!-- Javascript -->
-  <script src="js/jQuery.js"></script>
-  <script src="js/helper.js"></script>
-
-  <!-- Bootstrap -->
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
+    <!-- Bootstrap -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-  <!-- Google Maps API -->
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <!-- Google Maps API -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
-  <!-- Viewport settings -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-  <!-- Header -->
-  <div id="header-wrapper">
-    <header class="container">
-      <div id="header" class="row">
+    <!-- Header -->
+    <div id="header-wrapper">
+        <header class="container">
+            <div id="header" class="row">
 
-        <!-- Header-Id: Biopic, Name, Title, Location -->
-        <div id="header-id" class="col-sm-4 col-md-3 text-center"></div>
+                <!-- Header-Id: Biopic, Name, Title, Location -->
+                <div id="header-id" class="col-sm-4 col-md-3 text-center"></div>
 
-        <!-- Header-Info: Contacts, Welcome Message, Skills -->
-        <div id="header-info" class="col-sm-8 col-md-9 clearfix">
+                <!-- Header-Info: Contacts, Welcome Message, Skills -->
+                <div id="header-info" class="col-sm-8 col-md-9 clearfix">
 
-          <!-- Contact list -->
-          <div class="row">
-            <ul id="header-contacts" class="col-xs-12 flex-box list-unstyled"></ul>
-          </div>
+                    <!-- Contact list -->
+                    <div class="row">
+                        <ul id="header-contacts" class="col-xs-12 flex-box list-unstyled"></ul>
+                    </div>
 
-          <!-- Welcome Message -->
-          <div class="row">
-            <div id="header-welcome" class="col-xs-12"></div>
-          </div>
+                    <!-- Welcome Message -->
+                    <div class="row">
+                        <div id="header-welcome" class="col-xs-12"></div>
+                    </div>
 
-          <!-- Skills at a Glance -->
-          <div class="row">
-            <div id="header-skills" class="col-xs-12 text-center"></div>
-          </div>
+                    <!-- Skills at a Glance -->
+                    <div class="row">
+                        <div id="header-skills" class="col-xs-12 text-center"></div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <!-- Page Content -->
+    <div id="main" class="container">
+
+        <!-- Projects, Experience, Education, Map -->
+        <div class="row">
+
+            <!-- Projects -->
+            <div id="projects" class="col-sm-8 col-md-8">
+                <h2>Projects</h2>
+            </div>
+
+            <!-- Experience -->
+            <div id="workExperience" class="col-sm-4 col-md-4">
+                <h2>Experience</h2>
+            </div>
+
+            <!-- Education -->
+            <div id="education" class="col-sm-4 col-md-4">
+                <h2>Education</h2>
+            </div>
+
+            <!-- Map -->
+            <div id="mapDiv" class="col-sm-4 col-md-4">
+                <h2>Where I've Lived and Worked</h2>
+            </div>
+
         </div>
 
-      </div>
-    </header>
-  </div>
-
-  <!-- Page Content -->
-  <div id="main" class="container">
-
-    <!-- Projects, Experience, Education, Map -->
-    <div class="row">
-
-      <!-- Projects -->
-      <div id="projects" class="col-sm-8 col-md-8">
-        <h2>Projects</h2>
-      </div>
-
-      <!-- Experience -->
-      <div id="workExperience" class="col-sm-4 col-md-4">
-        <h2>Experience</h2>
-      </div>
-
-      <!-- Education -->
-      <div id="education" class="col-sm-4 col-md-4">
-        <h2>Education</h2>
-      </div>
-
-      <!-- Map -->
-      <div id="mapDiv" class="col-sm-4 col-md-4">
-        <h2>Where I've Lived and Worked</h2>
-      </div>
+        <!-- Let's Connect contact list -->
+        <div class="row">
+            <div id="lets-connect" class="col-xs-12 dark-gray">
+                <h2 class="orange center-text">Let's Connect</h2>
+                <ul id="footerContacts" class="flex-box list-unstyled">
+                </ul>
+            </div>
+        </div>
 
     </div>
 
-    <!-- Let's Connect contact list -->
-    <div class="row">
-      <div id="lets-connect" class="col-xs-12 dark-gray">
-        <h2 class="orange center-text">Let's Connect</h2>
-          <ul id="footerContacts" class="flex-box list-unstyled">
-        </ul>
-      </div>
-    </div>
+    <!-- Javascript -->
+    <script src="js/resumeBuilder.js"></script>
 
-  </div>
-
-  <!-- Javascript -->
-  <script src="js/resumeBuilder.js"></script>
-
-  <script type="text/javascript">
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('header-contacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h2').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
+    <script type="text/javascript">
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('header-contacts').style.display = 'none';
+        }
+        if (document.getElementsByTagName('h2').length === 0) {
+            document.getElementById('header').style.display = 'none';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.display = 'none';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.display = 'none';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.display = 'none';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.display = 'none';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.display = 'none';
+        }
+    </script>
 </body>
+
 </html>
