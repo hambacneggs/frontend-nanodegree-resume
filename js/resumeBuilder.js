@@ -61,7 +61,7 @@ bio.display = function() {
       var formattedSkill = HTMLskills.replace("%data%", skill);
       $("#skills").append(formattedSkill);
   });
-}
+};
 
 bio.display();
 
@@ -94,7 +94,7 @@ work.display = function() {
     var formattedDesc = HTMLworkDescription.replace("%data%", job.description);
     $('.work-entry:last').append(formattedEmployer + formattedTitle + formattedDates + formattedLocation + formattedDesc);
   });
-}
+};
 
 work.display();
 
@@ -135,7 +135,7 @@ projects.display = function(){
       $(".project-entry:last").after(formattedImage);
     });
   });
-}
+};
 
 projects.display();
 
@@ -214,7 +214,7 @@ education.display = function() {
       target: "_blank"
     });
   });
-}
+};
 
 education.display();
 
